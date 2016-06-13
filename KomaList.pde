@@ -18,7 +18,7 @@ class KomaList {
       k.draw();
     }
   }
-}
+
   AbstractKoma getSelectedKoma() {
     for (AbstractKoma k : komaArray) {
       if (k.kStat.selected) return k;
@@ -36,4 +36,5 @@ class KomaList {
       if (team==k.team && x == k.x && y == k.y && k.kStat.active) return k;
     }
     return null;
+  }
   }
